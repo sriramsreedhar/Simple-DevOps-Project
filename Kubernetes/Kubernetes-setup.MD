@@ -86,6 +86,12 @@
     kubectl get pods
     kubectl get deployments
    ```
+   
+  ```If above does not create deployments, then try this. 
+  # kubectl create deploy sample-nginx --image=nginx
+  # kubectl scale deployment sample-nginx --replicas 2
+  # kubectl expose deployment sample-nginx --port=80 --type=LoadBalancer  
+  ``` 
 
 1. Expose the deployment as service. This will create an ELB in front of those 2 containers and allow us to publicly access them.
    ```sh
