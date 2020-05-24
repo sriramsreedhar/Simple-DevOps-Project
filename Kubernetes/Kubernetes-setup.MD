@@ -87,7 +87,8 @@
     kubectl get deployments
    ```
    
-  ```If above does not create deployments, then try this. 
+  ```
+  If above does not create deployments, then try this. 
   # kubectl create deploy sample-nginx --image=nginx
   # kubectl scale deployment sample-nginx --replicas 2
   # kubectl expose deployment sample-nginx --port=80 --type=LoadBalancer  
